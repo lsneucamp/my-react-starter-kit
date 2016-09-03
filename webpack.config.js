@@ -5,9 +5,9 @@ module.exports = {
     entry: './app.jsx',
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist",
+        path: __dirname + "/public/assets",
     },
-    //devtool: "source-map",
+    // devtool: "source-map",
     module: {
         loaders: [
             {

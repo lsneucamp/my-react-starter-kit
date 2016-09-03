@@ -31,7 +31,7 @@ const options = {
 }
 
 // serve static assets normally
-app.use(express.static(__dirname + '/dist'))
+app.use(express.static(__dirname + '/public'))
 app.use(session({
     secret: SECRET,
     name: CLIENT_ID,
@@ -94,7 +94,7 @@ app.get('/auth', function (req, res) {
 })
 
 app.get('*', function (request, response) {
-    response.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+    response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
 
