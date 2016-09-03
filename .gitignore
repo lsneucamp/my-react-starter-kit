@@ -1,0 +1,7 @@
+
+.idea/
+dist/*
+#do not ignore index.html
+!dist/index.html
+node_modules/
+src/app/stores/
